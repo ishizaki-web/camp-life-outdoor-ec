@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CAMP LIFE OUTDOOR（キャンプライフアウトドア）は、キャンプをより楽しく、より快適に楽しんでもらうために、あなたのキャンプライフを全力でサポートします。">
+  <meta name="keywords" content="キャンプ,camp,キャンプライフアウトドア,camp life,アウトドア">
+  <meta name="robots" content="noindex,nofollow">
+  <title>CAMP LIFE OUTDOOR（キャンプライフアウトドア）| 非日常を、日常に。テントを中心としたアウトドア用品店</title>
+  <!-- OGP -->
+  <meta property="og:title" content="CAMP LIFE OUTDOOR">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="非日常を、日常に。テントを中心としたアウトドア用品店です。">
+  <meta property="og:url" content="https://ishizaki-web.net/camp-life/">
+  <meta property="og:site_name" content="CAMP LIFE OUTDOORのWEBサイト">
+  <meta property="og:image" content="https://ishizaki-web.net/camp-life/images/ogp_photo.jpg">
+
+  <!--icon -->
+  <link rel="icon" href="../images/common/favicon.ico">
+  <!--Google Fonts-->
+  <!-- Noto Sans JP -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <!-- Noto Serif JP -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap"
+    rel="stylesheet">
+  <!-- Montserrat -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!--FontAwesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous">
+  <!--reset css-->
+  <link rel="stylesheet" href="../css/reset.css">
+  <!--inview CSS-->
+  <link rel="stylesheet" href="../css/inview.css">
+  <!--slick css-->
+  <link rel="stylesheet" href="../css/slick.css">
+  <link rel="stylesheet" href="../css/slick-theme.css">
+  <link rel="stylesheet" href="../css/slick-custom.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+  <!--style css-->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style-responsive.css">
+
+  <!--jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <!--inview plugin js-->
+  <script type="text/javascript" src="../js/jquery.inview.js"></script>
+  <!--slick js-->
+  <!-- <script src="../js/slick.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- nav -->
+  <script src="../js/custom.js"></script>
+  <!--Smoothscroll-->
+  <script type="text/javascript" src="../js/SmoothScroll.js"></script>
+  <!-- zoom -->
+  <script src="../js/jquery.elevatezoom.js"></script>
+  <script>
+    $(function () {
+      var w = $(window).width();
+      var x = 780;
+      if (w >= x) {
+        $("#zoom_01").elevateZoom({ scrollZoom : true });
+        $("#zoom_02").elevateZoom({ scrollZoom : true });
+        $("#zoom_03").elevateZoom({ scrollZoom : true });
+        $("#zoom_04").elevateZoom({ scrollZoom : true });
+        $("#zoom_05").elevateZoom({ scrollZoom : true });
+        $("#zoom_06").elevateZoom({ scrollZoom : true });
+        $("#zoom_07").elevateZoom({ scrollZoom : true });
+        $("#zoom_08").elevateZoom({ scrollZoom : true });
+        $("#zoom_09").elevateZoom({ scrollZoom : true });
+        $("#zoom_10").elevateZoom({ scrollZoom : true });
+        $("#zoom_11").elevateZoom({ scrollZoom : true });
+        $("#zoom_12").elevateZoom({ scrollZoom : true });
+        $("#zoom_13").elevateZoom({ scrollZoom : true });
+      }
+    });
+  </script>
+
+  <!-- 商品画像 -->
+  <script>
+    $(function () {
+      //上部画像の設定
+      $('.tent-mainview').slick({
+        infinite: true, //スライドをループさせるかどうか。初期値はtrue。
+        fade: false, //フェードの有効化
+        arrows: true,
+        asNavFor: '.tent-viewer', //連動させるサムネイルのクラス名
+      });
+
+      //選択画像の設定
+      $('.tent-viewer').slick({
+        infinite: true, //スライドをループさせるかどうか。初期値はtrue。
+        slidesToShow: 5, //表示させるスライドの数
+        focusOnSelect: true, //フォーカスの有効化
+        asNavFor: '.tent-mainview', //連動させるスライドショーのクラス名
+      });
+    });
+  </script>
+
+  <!-- 商品説明リンクの固定 -->
+  <script>
+    $(function () {
+      var navPos = $(".tent-link-pc").offset().top;
+      var navPosR = $(".tent-link-responsive").offset().top + 80;
+
+      //ブラウザをスクロール
+      $(window).scroll(function () {
+        //スクロール量とnav要素の初期位置を比較
+        if ($(window).scrollTop() > navPos) {
+          //条件を満たした場合、nav要素を上部に固定
+          $(".tent-link-pc").css("position", "fixed");
+        } else {
+          //満たさない場合、nav要素を通常配置にする
+          $(".tent-link-pc").css("position", "static");
+        }
+        if ($(window).scrollTop() > navPosR) {
+          $(".tent-link-responsive").css("position", "fixed");
+        } else {
+          $(".tent-link-responsive").css("position", "static");
+        }
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <header id="header">
+    <h1><img src="../images/common/shopLogo_bk.png" alt="ロゴ"></h1>
+  </header>
+
+  <div class="openbtn"><span></span><span></span><span></span></div>
+  <nav id="g-nav">
+    <div id="g-nav-list">
+      <ul class="sns flex">
+        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+      </ul>
+      <p><a href="../index.html">TOP</a></p>
+      <div class="flex">
+        <ul>
+          <li><a href="concept.html">CONCEPT</a></li>
+          <li><a href="../index.html#topics">TOPICS</a></li>
+        </ul>
+        <ul>
+          <li><a href="../index.html#recommend">PICKUP ITEMS</a></li>
+          <li><a href="../index.html#news">NEWS</a></li>
+        </ul>
+      </div>
+      <div id="g-nav-products">
+        <p><a href="../index.html#products">PRODUCTS</a></p>
+        <div class="flex">
+          <ul class="ul-product">
+            <li><a href="tent-list.html">TENT</a></li>
+            <li><a href="../index.html#products">SLEEPING BAG</a></li>
+            <li><a href="../index.html#products">LIGHTS</a></li>
+          </ul>
+          <ul class="ul-product">
+            <li><a href="../index.html#products">KITCHEN</a></li>
+            <li><a href="../index.html#products">BAG</a></li>
+            <li><a href="../index.html#products">OTHERS</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <ul class="flex nav-list-support">
+        <li><a href="#">SHOP LIST</a></li>
+        <li><a href="#">SUPPORT</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="circle-bg"></div>
+
+  <main id="tent">
+    <section>
+      <div class="w1024 cf">
+        <div class="tent-title">
+          <h2><span>ステイネスト</span>前室付きドームテント<span>(商品番号：CL-12)</span></h2>
+          <p>¥33,860<span>（税込）</span></p>
+          <a href="#" class="gray-btn">&nbsp;<i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;オンラインストアで購入</a>
+        </div>
+
+        <div class="tent-photos">
+          <ul class="tent-mainview">
+            <li><img id="zoom_01" src="../images/tent/arai-tent-corner.png" data-zoom-image="../images/tent/zoom/arai-tent-corner.png" alt=""></li>
+            <li><img id="zoom_02" src="../images/tent/arai-tent-back.png" data-zoom-image="../images/tent/zoom/arai-tent-back.png" alt=""></li>
+            <li><img id="zoom_03" src="../images/tent/arai-tent-side.png" data-zoom-image="../images/tent/zoom/arai-tent-side.png" alt=""></li>
+            <li><img id="zoom_04" src="../images/tent/arai-tent-open.png" data-zoom-image="../images/tent/zoom/arai-tent-open.png" alt=""></li>
+            <li><img id="zoom_05" src="../images/tent/arai-tent-in.png" data-zoom-image="../images/tent/zoom/arai-tent-in.png" alt=""></li>
+            <li><img id="zoom_06" src="../images/tent/arai-tent-in-corner.png" data-zoom-image="../images/tent/zoom/arai-tent-in-corner.png" alt=""></li>
+            <li><img id="zoom_07" src="../images/tent/arai-tent-in-back.png" data-zoom-image="../images/tent/zoom/arai-tent-in-back.png" alt=""></li>
+            <li><img id="zoom_08" src="../images/tent/roof.png" data-zoom-image="../images/tent/zoom/roof.png" alt=""></li>
+            <li><img id="zoom_09" src="../images/tent/pocket.png" data-zoom-image="../images/tent/zoom/pocket.png" alt=""></li>
+            <li><img id="zoom_10" src="../images/tent/mesh.png" data-zoom-image="../images/tent/zoom/mesh.png" alt=""></li>
+            <li><img id="zoom_11" src="../images/tent/arai-tent-packed.png" data-zoom-image="../images/tent/zoom/arai-tent-packed.png" alt=""></li>
+            <li><img id="zoom_12" src="../images/tent/pole.png" data-zoom-image="../images/tent/pole.png" alt=""></li>
+            <li><img id="zoom_13" src="../images/tent/peg.png" data-zoom-image="../images/tent/peg.png" alt=""></li>
+          </ul>
+          <ul class="tent-viewer">
+            <li><img src="../images/tent/arai-tent-corner.png" alt=""></li>
+            <li><img src="../images/tent/arai-tent-back.png" alt=""></li>
+            <li><img src="../images/tent/arai-tent-side.png" alt=""></li>
+            <li><img src="../images/tent/arai-tent-open.png" alt=""></li>
+            <li><img src="../images/tent/arai-tent-in.png" alt=""></li>
+            <li><img src="../images/tent/arai-tent-in-corner.png" alt=""></li>
+            <li><img src="../images/tent/arai-tent-in-back.png" alt=""></li>
+            <li><img src="../images/tent/roof.png" alt=""></li>
+            <li><img src="../images/tent/pocket.png" alt=""></li>
+            <li><img src="../images/tent/mesh.png" alt=""></li>
+            <li><img src="../images/tent/arai-tent-packed.png" alt=""></li>
+            <li><img src="../images/tent/pole.png" alt=""></li>
+            <li><img src="../images/tent/peg.png" alt=""></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="links">
+      <div class="w1024 cf">
+
+        <div class="tent-link-pc">
+          <ul>
+            <li><a href="#tent-description">&nbsp;<i class="fas fa-chevron-right"></i>&nbsp;&nbsp;製品説明</a></li>
+            <li><a href="#tent-spec">&nbsp;<i class="fas fa-chevron-right"></i>&nbsp;&nbsp;製品スペック</a></li>
+          </ul>
+        </div>
+        <div class="tent-link-responsive">
+          <ul class="flex">
+            <li><a href="#tent-description">&nbsp;<i class="fas fa-chevron-down"></i>&nbsp;製品説明</a></li>
+            <li><a href="#tent-spec">&nbsp;<i class="fas fa-chevron-down"></i>&nbsp;スペック</a></li>
+          </ul>
+        </div>
+
+        <div id="tent-description">
+          <h3>製品説明</h3>
+          <p>ペグ打ちなしで前室ができるドームテントです。<br>
+            ポールを2箇所入れるだけで組み立てられ、設営と撤収が簡単スピーディー。<br>
+            テントを建てるだけで前室が出来るので、ペグが打てない場所でも快適スペースを確保。<br>
+            背面にはベンチレーション、インナーには開け閉め出来るメッシュ窓を装備し、通気性があります。<br>
+            インナーの内側にはポケット、天井にはライトなどが吊り下げられるループ付き。
+          </p>
+          <h3 id="tent-spec">製品スペック</h3>
+          <table>
+            <tr>
+              <td>重量</td>
+              <td>1290g (本体＋フレーム＋フライシート)</td>
+            </tr>
+            <tr>
+              <td>サイズ</td>
+              <td>設営時：間口148(最大230)×奥行122(就寝部82)×高さ97cm<br>
+                収納時：本体30×13φcm</td>
+            </tr>
+            <tr>
+              <td>素材</td>
+              <td>本体：28dnリップストップナイロン<br>
+                フライ：30dnリップストップナイロンPUコーティング<br>
+                シート：40dnナイロンタフタPUコーティング<br>
+                フレーム：NSL9フェザーライト(DAC社製)</td>
+            </tr>
+          </table>
+          
+        </div>
+        <a class="gray-btn" href="tent-list.html">テントカテゴリーへ戻る</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <ul>
+      <ul class="sns flex">
+        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+      </ul>
+      <ul class="flex">
+        <li><a href="#">SHOP LISTS</a></li>
+        <li><a href="#">SUPPORT</a></li>
+      </ul>
+      <small>&copy; 2024 CAMP LIFE OUTDOOR All Rights Reserved.</small>
+    </ul>
+    </footer>
+
+</body>
+
+</html>
