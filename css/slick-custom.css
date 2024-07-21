@@ -1,0 +1,14 @@
+@charset "utf-8";
+.slick-prev:before,
+.slick-next:before {
+  color: #a6a6a6;
+  font-size: 26px;
+}
+.slick-prev:before {
+  display: block;
+  transform: translate(-12px);
+}
+.slick-next:before {
+  display: block;
+  transform: translate(6px);
+}
