@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CAMP LIFE OUTDOOR（キャンプライフアウトドア）は、キャンプをより楽しく、より快適に楽しんでもらうために、あなたのキャンプライフを全力でサポートします。">
+  <meta name="keywords" content="キャンプ,camp,キャンプライフアウトドア,camp life,アウトドア">
+  <meta name="robots" content="noindex,nofollow">
+  <title>CAMP LIFE OUTDOOR（キャンプライフアウトドア）| 非日常を、日常に。テントを中心としたアウトドア用品店</title>
+  <!-- OGP -->
+  <meta property="og:title" content="CAMP LIFE OUTDOOR">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="非日常を、日常に。テントを中心としたアウトドア用品店です。">
+  <meta property="og:url" content="https://ishizaki-web.net/camp-life/">
+  <meta property="og:site_name" content="CAMP LIFE OUTDOORのWEBサイト">
+  <meta property="og:image" content="https://ishizaki-web.net/camp-life/images/ogp_photo.jpg">
+
+  <!--icon -->
+  <link rel="icon" href="images/common/favicon.ico">
+  <!--Google Fonts-->
+  <!-- Noto Sans JP -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <!-- Noto Serif JP -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap"
+    rel="stylesheet">
+  <!-- Montserrat -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!--FontAwesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous">
+  <!--reset css-->
+  <link rel="stylesheet" href="css/reset.css">
+  <!--inview CSS-->
+  <link rel="stylesheet" href="css/inview.css">
+  <!-- vegas css -->
+  <link rel=" stylesheet" href="css/vegas.css">
+  <!--slick css-->
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/slick-custom.css">
+
+  <!--style css-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-responsive.css">
+  <!--jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!--inview plugin js-->
+  <script type="text/javascript" src="js/jquery.inview.js"></script>
+  <!-- vegas js -->
+  <script src="js/vegas.js"></script>
+  <!--slick js-->
+  <script src="js/slick.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- top-text animation -->
+  <script src="js/text-animation.js"></script>
+  <!-- text anime js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <!--Smoothscroll-->
+  <script type="text/javascript" src="js/SmoothScroll.js"></script>
+
+  <!-- vegas code -->
+  <script>
+    $(function () {
+      $(".vegas").vegas({
+        slides: [{
+            src: "images/slide-1.png"
+          },
+          {
+            src: "images/slide-3.png"
+          },
+          {
+            src: "images/slide-2.png"
+          },
+          {
+            src: "images/slide-4.png"
+          }
+        ],
+        transition: 'fade',
+        animation: 'kenburnsDown',
+        timer: false,
+        transitionDuration: 4000, //スライドの遷移アニメーションの時間
+        delay: 10000, //スライド切り替え時の遅延時間
+        animationDuration: 8000
+      });
+    });
+  </script>
+
+  <!--slick code-->
+  <script>
+    $(function () {
+      $('.slick-products').slick({
+        autoplay: true,
+        arrows: true, //左右の矢印あり
+        dots: false,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        autoplaySpeed: 6000,
+        pauseOnHover: true,
+        speed: 1200,
+        swipe: true,
+        responsive: [{
+            breakpoint: 440,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 640,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+              // arrows: false
+            }
+          },
+        ]
+      });
+      $('.slick-features').slick({
+        autoplay: true,
+        arrows: true,
+        dots: false,
+        infinite: true,
+        slidesToShow: 3,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
+        speed: 1200,
+        swipe: true,
+        responsive: [{
+            breakpoint: 440,
+            settings: {
+              slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 640,
+            settings: {
+              slidesToShow: 1
+              // arrows: false
+            }
+          },
+        ]
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+  <div id="splash">
+    <div id="splash_logo">
+      <img src="images/common/shopLogo.png" alt="ロゴ" class="fadeUp">
+    </div>
+  </div>
+
+  <header id="header">
+    <h1><img src="images/common/shopLogo.png" alt="ロゴ"></h1>
+  </header>
+
+  <p class="top-text">非日常を、日常に。</p>
+  <p class="top-text">MAKE YOUR DAY EXTRAORDINARY</p>
+
+  <div class="main-filter">
+    <div class="vegas"></div>
+  </div>
+
+  <div class="openbtn"><span></span><span></span><span></span></div>
+  <nav id="g-nav">
+    <div id="g-nav-list">
+      <ul class="sns flex">
+        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+      </ul>
+
+      <p><a href="#">TOP</a></p>
+
+      <div class="flex">
+        <ul>
+          <li><a href="html/concept.html">CONCEPT</a></li>
+          <li><a href="#topics">TOPICS</a></li>
+        </ul>
+        <ul>
+          <li><a href="#recommend">PICKUP <span>ITEMS</span></a></li>
+          <li><a href="#news">NEWS</a></li>
+        </ul>
+      </div>
+
+      <div id="g-nav-products">
+        <p><a href="#products">PRODUCTS</a></p>
+        <div class="flex">
+          <ul class="ul-product">
+            <li><a href="html/tent-list.html">TENT</a></li>
+            <li><a href="#products">SLEEPING BAG</a></li>
+            <li><a href="#products">LIGHTS</a></li>
+          </ul>
+          <ul class="ul-product">
+            <li><a href="#products">KITCHEN</a></li>
+            <li><a href="#products">BAG</a></li>
+            <li><a href="#products">OTHERS</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <ul class="flex nav-list-support">
+        <li><a href="#">SHOP LIST</a></li>
+        <li><a href="#">SUPPORT</a></li>
+      </ul>
+
+    </div>
+  </nav>
+  <div class="circle-bg"></div>
+
+  <main>
+    <section id="recommend">
+      <div class="w1024">
+        <h2 class="move">PICKUP ITEMS<span class="line">おすすめ商品</span></h2>
+        <div class="slick-products">
+          <div class="slick-item">
+            <a href="#">
+              <figure>
+                <img src="images/slick-products/sleepingbag.png" alt="ハグ スリーピングバッグ">
+                <figcaption>ハグ スリーピングバッグ<span>CT-29</span></figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="slick-item">
+            <a href="#">
+              <figure>
+                <img src="images/slick-products/bag.png" alt="ピギーバック バックパック">
+                <figcaption>ピギーバック バックパック<span>CP-42</span></figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="slick-item">
+            <a href="#">
+              <figure>
+                <img src="images/slick-products/lantern.png" alt="テイクミー ランタン">
+                <figcaption>テイクミー ランタン<span>CA-37</span></figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="slick-item">
+            <a href="html/tent.html">
+              <div class="new"><p>NEW</p></div>
+              <figure>
+                <img src="images/slick-products/arai-tent.png" alt="ステイネスト 前室付きドームテント">
+                <figcaption>ステイネスト<br>前室付きドームテント<span>CL-12</span></figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="slick-item">
+            <a href="#">
+              <figure>
+                <img src="images/slick-products/kettle.png" alt="テイクミー ケトル">
+                <figcaption>テイクミー ケトル<span>CA-54</span></figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="slick-item">
+            <a href="#">
+              <figure>
+                <img src="images/slick-products/home-tent.png" alt="ハグ おうちテント">
+                <figcaption>ハグ おうちテント<span>CT-65</span></figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="slick-item">
+            <a href="#">
+              <figure>
+                <img src="images/slick-products/dorm-tent.png" alt="テイクミー テント">
+                <figcaption>テイクミー テント<span>CA-28</span></figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="slick-item">
+            <a href="#">
+              <figure>
+                <img src="images/slick-products/peg-slick.png" alt="ステイネスト ペグ">
+                <figcaption>ステイネスト ペグ<span>CL-26</span></figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="topics">
+      <div class="w1024">
+        <h2 class="move">TOPICS<span class="line">特集</span></h2>
+        <div class="slick-features">
+          <div class="slick-item">
+            <a href="#">
+              <figure>
+                <img src="images/topics/banner.png" alt="最新神道具2024 バナー">
+                <figcaption></figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="slick-item">
+            <a href="#">
+              <figure>
+                <img src="images/topics/home-tent.png" alt="お家でアウトドア気分 ベランピングのススメ バナー">
+                <figcaption></figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="slick-item">
+            <a href="#">
+              <figure>
+                <img src="images/topics/shoes.png" alt="新商品ハイキングサファリ バナー">
+                <figcaption></figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="slick-item">
+            <a href="#" target="_blank">
+              <figure>
+                <img src="images/topics/coupon.png" alt="会員様限定 10%off クーポン">
+                <figcaption></figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="slick-item">
+            <a href="#" target="_blank">
+              <figure>
+                <img src="images/topics/bag.png" alt="デイユーズバックパック再入荷 バナー">
+                <figcaption></figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="slick-item">
+            <a href="#">
+              <figure>
+                <img src="images/topics/recipe.png" alt="キャンプレシピ バナー">
+                <figcaption></figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="w1024">
+        <h2 class="move">PRODUCTS<span class="line">商品</span></h2>
+      </div>
+      <ul class="grid-products">
+        <li class="tent product"><a href="html/tent-list.html">
+            <p>TENT<span>テント</span></p>
+            <video class="tent-video"
+              src="video/tent.mp4" loop muted playsinline></video>
+          </a></li>
+        <li class="sleep product"><a>SLEEPING BAG<span>寝袋</span>
+            <video class="sleep-video"
+              src="video/sleeping.mp4" loop muted playsinline></video>
+          </a></li>
+        <li class="lights product"><a>LIGHTS<span>ライト</span>
+            <video class="light-video"
+              src="video/light.mp4" loop muted playsinline></video>
+          </a></li>
+        <li class="bag product"><a>BAG<span>バッグ</span>
+            <video class="bag-video"
+              src="video/bag.mp4" loop muted playsinline></video>
+          </a></li>
+        <li class="others product"><a>OTHERS<span>その他</span>
+            <video class="others-video"
+              src="video/hammock.mp4" loop muted playsinline></video>
+          </a></li>
+        <li class="kitchen product"><a>COOKING<span>クッキング</span>
+            <video class="kitchen-video"
+              src="video/kitchen.mp4" loop muted playsinline></video>
+          </a></li>
+      </ul>
+    </section>
+
+    <section id="news">
+      <div class="w1024 news-wrap">
+        <h2 class="move">NEWS<span class="line">お知らせ</span></h2>
+        <table>
+          <tr>
+            <td>2024.07.25</td>
+            <td><a href="#">SUMMER FAIR開催！  8/9～8/16まで</a></td>
+          </tr>
+          <tr>
+            <td>2024.07.15</td>
+            <td><a href="#">発売新商品のお知らせ</a></td>
+          </tr>
+          <tr>
+            <td>2024.07.03</td>
+            <td><a href="#">2024年 夏期休業のご案内</a></td>
+          </tr>
+          <tr>
+            <td>2024.07.01</td>
+            <td><a href="#">CAMP LIFE OUTDOOR 千葉中央店OPEN！</a></td>
+          </tr>
+        </table>
+        <a class="gray-btn">READ MORE</a>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer id="footer">
+    <ul>
+      <ul class="sns flex">
+        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+      </ul>
+      <ul class="flex">
+        <li><a href="#">SHOP LISTS</a></li>
+        <li><a href="#">SUPPORT</a></li>
+      </ul>
+      <small>&copy; 2024 CAMP LIFE OUTDOOR All Rights Reserved.</small>
+    </ul>
+    </footer>
+
+  <!-- Cookie for logo loading -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+  <script type="text/javascript" src="js/load.js"></script>
+</body>
+
+</html>
