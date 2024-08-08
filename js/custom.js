@@ -27,7 +27,7 @@ $(function () {
   /*==================================
   	Hover action on grid-products
   ===================================*/
-  //レスポンシブではビデオを流さない
+  
   $(window).on('load resize', function () {
     var w = $(window).width();
     var x = 780;
@@ -139,4 +139,22 @@ $(function () {
     elem.style.backgroundSize = 100 + scrollY + '%';
   });
 
+});
+
+
+// topback show hide
+$(function() {
+  var navi = $("#topback");
+  var startPos = 0;
+  $(window).scroll(function() {
+    var currentPos = $(this).scrollTop();
+    if (currentPos > startPos) {
+      if ($(window).scrollTop() >= 600) {
+        $(navi).css("transform", "translateY(300%)");
+      }
+    } else {
+      $(navi).css("transform", "translateY(0)");
+    }
+    startPos = currentPos;
+  });
 });
