@@ -1089,3 +1089,21 @@ transform: translateY(0);
 #links .gray-btn{
   margin: 3em auto 4em;
 }
+
+/* topback */
+#topback {
+  display: block;
+  z-index: 100;
+  transition: 0.6s;
+  padding: 0.6em;
+  color: #7b4d28;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 4em;
+}
+
+#topback :hover {
+  text-decoration: none;
+  color: #c4c4c4;
+}
